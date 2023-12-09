@@ -1,0 +1,287 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/*Home*/
+nav {
+  width: 100%;
+  height: 75px;
+  line-height: 75px;
+  padding: 0px;
+  position: fixed;
+  background-color: #000435;
+}
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+nav ul {
+  float: right;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+nav li a {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0px 40px;
+  color: white;
+  text-decoration: none;
+  border-right: white 3px solid;
+  margin-right: 20px;
+}
+
+nav li a:hover {
+  border-left: solid 3px white;
+  background-color: rgb(3, 39, 243);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-container {
+  text-align: center;
+  opacity: 100%;
+}
+.home-container .home-text {
+  padding-top: 20%;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+.heading-text {
+  font-size: 30px;
+
+  color: white;
+}
+.appointment-button {
+  margin-top: 5%;
+  background-color: #000435;
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  width: 160px;
+
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 5%;
+}
+.appointment-link {
+  color: white;
+  text-decoration: none;
+}
+.appointment-link:hover {
+  color: black;
+}
+.appointment-button:hover {
+  background-color: rgb(3, 39, 243);
+}
+
+footer {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  padding: 1em;
+  position: sticky;
+}
+/*Appointment*/
+
+.appointment-form {
+  margin: 0 auto;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  padding-left: 100px;
+}
+.appointment-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.appointment-form input {
+  height: 30px;
+  display: block;
+  width: 70%;
+  border-radius: 14px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.appointment-form input[type="submit"] {
+  font-size: 1.5em;
+  width: 150px;
+  align-self: center;
+  background-color: black;
+  color: white;
+
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-right: 90px;
+}
+.appointment-form input[type="submit"]:hover {
+  background-color: rgb(20, 219, 119);
+}
+
+/* About*/
+
+.about-body {
+  display: flex;
+  margin: 0%;
+  background-image: url(shell-bg.jpg);
+}
+
+.about-pic,
+.about-text {
+  height: 600px;
+
+  margin-top: 5%;
+}
+
+.about-pic {
+  width: 65%;
+}
+
+.about-collage {
+  margin-top: 4%;
+  margin-left: 5%;
+  width: 90%;
+  height: 90%;
+}
+.row-about {
+  width: 100%;
+  height: 33%;
+
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 130px;
+  width: 130px;
+}
+.col-about1 {
+  width: 20%;
+  height: 90%;
+  border: solid 3px black;
+  margin-top: 1.5%;
+  background-color: #ffd500;
+}
+.col-about2 {
+  height: 100%;
+  width: 33%;
+}
+.left-col2,
+.mid-col2,
+.right-col2 {
+  width: 60%;
+  height: 70%;
+  border: black 3px solid;
+  background-color: #ffd500;
+  margin-top: 10%;
+}
+.left-col2 {
+  margin-left: 35%;
+}
+.right-col2 {
+  margin-left: 5%;
+}
+.mid-col2 {
+  width: 90%;
+  height: 90%;
+  margin-top: 5%;
+  margin-left: 5%;
+  background-color: #e7393e;
+}
+.col-about1:hover {
+  background-color: #ed1c24;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+.left-col2:hover {
+  background-color: #ed1c24;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+.right-col2:hover {
+  background-color: #ed1c24;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+.col-about3:hover {
+  background-color: #ed1c24;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+.mid-col2:hover {
+  background-color: #ffd500;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+
+.mid-col2-img {
+  width: 200px;
+  height: 200px;
+}
+
+.col-about3 {
+  width: 20%;
+  height: 90%;
+  border: solid 3px black;
+  margin-top: 1%;
+  background-color: #ffd500;
+}
+.about-text {
+  justify-content: center;
+  font-weight: bold;
+  align-items: center;
+  display: column;
+  color: rgb(0, 0, 0);
+  width: 35%;
+}
+
+.rc6 {
+  width: 400px;
+  height: 150px;
+
+  font-size: 10 0px;
+  display: flex;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 100px;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+
+.rc7 {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
+  font-size: 20px;
+  font-style: bold;
+  color: white;
+  background-color: #c84630;
+  border: solid 3px black;
+  padding-top: 5%;
+}
+/*Contact */
+
+/*Services*/

@@ -1,5 +1,3 @@
-<!-- resources/views/welcome.blade.php -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,11 +11,11 @@
     @else
         @include("navigation bar/topnavbar")
     @endif
+
     <div class="container mt-5">
+        <!-- Heading and Search Bar -->
         <div class="d-flex mb-3 justify-content-between align-items-center">
-            <div>
-                <h1>{{ $title }}</h1>
-            </div>
+            <div><h1></h1></div>
             <div class="d-flex align-items-center">
                 <span class="mr-2" style="font-size: 18px;">Browse</span>
                 <form action="{{ route('search') }}" method="GET" class="form-inline">
@@ -26,6 +24,21 @@
                 </form>
             </div>
         </div>
+        
+        <div class="row1">
+            <!-- Image Box -->
+            <div class="col-md-6">
+                <img class="image" src="http://127.0.0.1:8000/images/Rentaklat-logo.png" alt="Logo"> 
+            </div>
+            <!-- Welcome Message -->
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="welcome text-center">
+                    <h2>Welcome to RentAklat</h2>
+                    <p class="quote">Uniting Students, Sharing Knowledge</p>
+                </div>
+            </div>
+        </div>
+        <!-- Featured Books Section -->
         <h2>Featured Books</h2>
         <div class="row">
             @foreach ($featuredBooks as $book)
@@ -149,24 +162,69 @@
         @endforeach
     </div>
 
-    
+    <!-- Styles -->
     <style>
-        .custom-bg-color {
-            background-color: #e1dcc5;
+          .custom-bg-color {
+            background-color: #560000;
+        }
+        .row1{
+            height: 80vh;
+            display: flex;
+       
+        }
+        h2{
+            color: #f9f9f9;
+        }
+        .quote{
+            color: #f5b879;
+            font-size: 25px;
         }
 
-        .login-text {
-            cursor: pointer;
-            color: #007bff; /* Blue color for link */
-            text-decoration: none;
+        .row{
+            height:100%;
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+        .welcome h2 {
+            font-size: 3rem; 
+        }
+        .mr-2{
+            color: #f9f9f9;
+        }
+        .btn {
+            background-color: #943b00;
+            border: 1px solid #943b00;
+            transition: background-color 0.3s ease, border 0.3s ease; /* Smooth transition for background and border */
         }
 
-        .login-text:hover {
-            text-decoration: underline;
+        .btn:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.5);
+            background-color: #b66025; 
+            border: 1px solid #943b00;
+        }
+
+        html body .btn:active {
+            background-color: #b66025 !important; 
+            border-color: #943b00 !important;
+            color: #fff !important;
+            box-shadow: none !important; 
+        }
+
+        html body .btn:active:focus {
+            outline: none !important;
+            box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.5) !important; 
+        }
+
+        .btn:hover {
+            background-color: #b66025; 
+            border: 1px solid #943b00;
         }
     </style>
 
-    <!-- Bootstrap JS (required for modal functionality) -->
+    <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

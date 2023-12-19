@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   
     <style>
        
         body {
-            background-color: #e1dcc5;
+            background-color: #560000;
         }
 
         .custom-container {
@@ -20,11 +21,15 @@
             border-radius: 8px; 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
         }
-
         h1 {
-            color: #007bff;
+            color: #560000;
         }
-
+        .print{
+            background-color: #b66025;
+            border: none;
+            border-radius: 10px;
+            padding: 8px;
+        }
     
     </style>
 </head>
@@ -105,6 +110,9 @@
                 @endforeach
             </tbody>
         </table>
+        <div style="display: flex; justify-content: flex-end;"> 
+        <button class = "print"> <a href="{{ url('/users/pdf') }}" target="_blank" style="color: #F9f9f9"><i class='bx bx-printer' ></i> Print PDF</a></button>
+    </div>
     </div>
 
 

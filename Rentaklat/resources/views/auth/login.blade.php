@@ -52,7 +52,36 @@
 
     <style>
         .custom-bg-color {
-            background-color: #e1dcc5;
+            background-color: #560000;
+        }
+        .btn {
+           background-color: #943b00;
+           border: 1px solid #943b00;
+           transition: background-color 0.3s ease, border 0.3s ease; /* Smooth transition for background and border */
+        }
+
+        .btn:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.5);
+            background-color: #b66025; 
+            border: 1px solid #943b00;
+        }
+
+        html body .btn:active {
+            background-color: #b66025 !important; 
+            border-color: #943b00 !important;
+            color: #fff !important;
+            box-shadow: none !important; 
+        }
+
+        html body .btn:active:focus {
+            outline: none !important;
+            box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.5) !important; 
+        }
+
+            .btn:hover {
+                background-color: #b66025; 
+                border: 1px solid #943b00;
         }
     </style>
 </body>

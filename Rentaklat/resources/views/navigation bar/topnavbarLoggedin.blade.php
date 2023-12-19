@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333333;">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="#">
-        <img src="{{ asset('images/tada.png') }}" style="width: 25px; height: 25px;"> RentAklat
+        <img src="{{ asset('images/Rentaklat-logo.png') }}" style="width: 25px; height: 25px;"> RentAklat
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
             <li class="nav-item">
                 <form id="logout-form" action="{{ route('logout') }}" method="POST">
                     @csrf
-                    <a class="nav-link" href="#" onclick="document.getElementById('logout-form').submit();">Log Out</a>
+                    <a class="nav-link" href="#" onclick="document.getElementById('logout-form').submit();">LOG OUT</a>
                 </form>
             </li>
         </ul>

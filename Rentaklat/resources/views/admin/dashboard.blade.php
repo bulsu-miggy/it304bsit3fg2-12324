@@ -8,7 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #e1dcc5;
+            background-color: #560000;
         }
 
         .custom-container {
@@ -16,23 +16,23 @@
         }
 
         h1 {
-            color: #007bff;
+            color: #F9F9F9;
         }
 
         .dashboard-section {
             margin-bottom: 30px;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: #f9f9f9;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .dashboard-section h2 {
-            color: #007bff;
+            color: #560000;
         }
 
         .dashboard-section p {
-            color: #333333;
+            color: #560000;
         }
 
         .log-container {

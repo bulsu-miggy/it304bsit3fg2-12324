@@ -55,7 +55,7 @@
     </div>
     <style>
         .custom-bg-color {
-            background-color: #e1dcc5;
+            background-color: #560000;
         }
 
         .login-text {

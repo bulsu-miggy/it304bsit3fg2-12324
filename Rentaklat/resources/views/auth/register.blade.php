@@ -53,7 +53,7 @@
                                 <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
                                 <div class="col-md-6">
-                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                    <input id="email" type="email" pattern=".+@bulsu\.edu\.ph" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -117,7 +117,36 @@
 
     <style>
         .custom-bg-color {
-            background-color: #e1dcc5;
+            background-color: #560000;
+        }
+        .btn {
+           background-color: #943b00;
+           border: 1px solid #943b00;
+           transition: background-color 0.3s ease, border 0.3s ease; /* Smooth transition for background and border */
+        }
+
+        .btn:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.5);
+            background-color: #b66025; 
+            border: 1px solid #943b00;
+        }
+
+        html body .btn:active {
+            background-color: #b66025 !important; 
+            border-color: #943b00 !important;
+            color: #fff !important;
+            box-shadow: none !important; 
+        }
+
+        html body .btn:active:focus {
+            outline: none !important;
+            box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.5) !important; 
+        }
+
+            .btn:hover {
+                background-color: #b66025; 
+                border: 1px solid #943b00;
         }
     </style>
 </body>

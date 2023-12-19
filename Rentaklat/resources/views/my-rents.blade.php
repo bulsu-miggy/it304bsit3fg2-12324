@@ -50,6 +50,10 @@
                                 <p class="card-text"><strong>Rented At:</strong>
                                     {{ $rent->created_at ? $rent->created_at->format('F d, Y H:i:s') : 'N/A' }}
                                 </p>
+                                <p class="card-text"><strong>Expected Maximum Return Period:</strong>
+                                    in 2 months
+                                </p>
+                                <p><i>*additional fees will be applied once not returned at expected period of time</i></p>
                                 <p class="card-text"><strong>Status:</strong> {{ $rent->status }}</p>
                                 @if ($rent->status === 'returned')
                                 <p class="card-text"><strong>Returned At:</strong>
@@ -129,7 +133,7 @@
 
     <style>
         .custom-bg-color {
-            background-color: #e1dcc5;
+            background-color: #560000;
         }
 
         .login-text {
@@ -142,6 +146,35 @@
         .login-text:hover {
             text-decoration: underline;
         }
+        .btn-primary {
+    background-color: #943b00;
+    border: 1px solid #943b00;
+    transition: background-color 0.3s ease, border 0.3s ease; /* Smooth transition for background and border */
+    }
+
+    .btn-primary:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.5);
+        background-color: #b66025; 
+        border: 1px solid #943b00;
+    }
+
+    html body .btn-primary:active {
+        background-color: #b66025 !important; 
+        border-color: #943b00 !important;
+        color: #fff !important;
+        box-shadow: none !important; 
+    }
+
+    html body .btn-primary:active:focus {
+        outline: none !important;
+        box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.5) !important; 
+    }
+
+        .btn-primary:hover {
+            background-color: #b66025; 
+            border: 1px solid #943b00;
+    }
     </style>
 
     <!-- Bootstrap JS (required for modal functionality) -->

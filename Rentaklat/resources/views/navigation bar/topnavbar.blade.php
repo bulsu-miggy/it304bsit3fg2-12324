@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333333;">
+<nav class="navbar navbar-expand-lg navbar-dark" >
     <a class="navbar-brand" href="#">
-        <img src="{{ asset('images/tada.png') }}"style="width: 25px; height: 25px;"> RentAklat
+        <img src="{{ asset('images/Rentaklat-logo.png') }}"style="width: 25px; height: 25px;"> RentAklat
     </a>
 
     <!-- Add a button to toggle the navigation bar on small screens -->
@@ -18,14 +18,14 @@
                 <a class="nav-link" href="{{ route('contact') }}">Contact us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('legal') }}">LEGAL POLICIES AND SECURITY</a>
+                <a class="nav-link" href="{{ route('legal') }}">Legal Policies and Security</a>
             </li>
             @guest
             <li class="nav-item">
                 <a href="{{ route('login') }}" class="nav-link">LOGIN</a>
             </li>
             <li class="nav-item">
-                <a href="{{ route('register') }}" class="nav-link">Register</a>
+                <a href="{{ route('register') }}" class="nav-link">REGISTER</a>
             </li>
             @else
             @endguest

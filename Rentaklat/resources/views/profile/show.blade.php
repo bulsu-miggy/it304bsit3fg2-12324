@@ -70,7 +70,7 @@
             </div>
             <div class="form-group row">
                 <div class="offset-sm-3 col-sm-6">
-                    <button type="submit" class="btn btn-primary" style="background-color: #0376b8; border-color: #0376b8;">
+                    <button type="submit" class="btn btn-primary" >
                         Resend Verification Email
                     </button>
                 </div>
@@ -85,8 +85,7 @@
                 </div>
                 <div class="col-sm-3">
                     <button class="btn btn-primary"
-                        data-toggle="modal" data-target="#changePhoneNumberModal"
-                        style="background-color: #0376b8; border-color: #0376b8;">
+                        data-toggle="modal" data-target="#changePhoneNumberModal">
                         Change Phone Number
                     </button>
                 </div>
@@ -101,8 +100,7 @@
                         <input type="tel" name="phone_number" pattern="[0-9]{11}" class="form-control" required>
                     </div>
                     <div class="col-sm-3">
-                        <button type="submit" class="btn btn-primary"
-                            style="background-color: #0376b8; border-color: #0376b8;">Enter</button>
+                        <button type="submit" class="btn btn-primary">Enter</button>
                     </div>
                 </div>
             </form>
@@ -116,8 +114,7 @@
                 </div>
                 <div class="col-sm-3">
                     <button class="btn btn-primary"
-                        data-toggle="modal" data-target="#changeAddressModal"
-                        style="background-color: #0376b8; border-color: #0376b8;">
+                        data-toggle="modal" data-target="#changeAddressModal">
                         Change Address
                     </button>
                 </div>
@@ -133,16 +130,14 @@
                             class="form-control" required>
                     </div>
                     <div class="col-sm-3">
-                        <button type="submit" class="btn btn-primary"
-                            style="background-color: #0376b8; border-color: #0376b8;">Update Address</button>
+                        <button type="submit" class="btn btn-primary">Update Address</button>
                     </div>
                 </div>
             </form>
             @endif
 
             <div class="d-flex justify-content-end">
-                <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#changePasswordModal"
-                    style="background-color: #0376b8; border-color: #0376b8;">
+                <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#changePasswordModal">
                     Change Password
                 </button>
             </div>
@@ -242,7 +237,7 @@
 </body>
 <style>
     .custom-bg-color {
-        background-color: #e1dcc5;
+        background-color: #560000;
         height: 100vh;
     }
 
@@ -256,6 +251,36 @@
     .login-text:hover {
         text-decoration: underline;
     }
+    .btn {
+    background-color: #943b00;
+    border: 1px solid #943b00;
+    transition: background-color 0.3s ease, border 0.3s ease; /* Smooth transition for background and border */
+    }
+
+    .btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.5);
+        background-color: #b66025; 
+        border: 1px solid #943b00;
+    }
+
+    html body .btn:active {
+        background-color: #b66025 !important; 
+        border-color: #943b00 !important;
+        color: #fff !important;
+        box-shadow: none !important; 
+    }
+
+    html body .btn:active:focus {
+        outline: none !important;
+        box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.5) !important; 
+    }
+
+        .btn:hover {
+            background-color: #b66025; 
+            border: 1px solid #943b00;
+    }
+
 </style>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>

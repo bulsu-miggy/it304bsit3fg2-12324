@@ -53,9 +53,6 @@ class BookController extends Controller
         $book = Book::find($bookId);
         $fee = 5.00; // Set the fee amount
 
-        // Integrate with payment gateway and charge the user
-        // ...
-
         if ($paymentSuccess) {
             $book->fee_paid = true;
             $book->save();

@@ -75,8 +75,12 @@
 
     <style>
         .custom-bg-color {
-            background-color: #e1dcc5;
+            background-color: #560000;
         }
+        h1{
+            text-align: center;
+        }
+
     </style>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

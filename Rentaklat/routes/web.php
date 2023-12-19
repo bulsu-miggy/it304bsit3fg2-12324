@@ -12,7 +12,11 @@ use App\Http\Controllers\RentController;
 use App\Http\Controllers\PaymentConfirmationController;
 use App\Http\Controllers\PendingRequestsController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PdfController;
+use App\Http\Controllers\BookReportController;
 
+Route::get('/users/pdf', [PdfController::class, 'downloadPdf']);
+Route::get('/books/pdf', [BookReportController::class, 'downloadpdf']);
 
 Route::get('/admin', [AdminController::class, 'adminDashboard'])->name('admin.dashboard');
 Route::get('/admin/manage-users', [AdminController::class, 'manageUsers'])->name('admin.manageUsers');

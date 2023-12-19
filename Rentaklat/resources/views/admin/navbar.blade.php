@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333333;">
     <a class="navbar-brand" href="#">
-        <img src="{{ asset('images/tada.png') }}" style="width: 25px; height: 25px;"> Rentaklat
+        <img src="{{ asset('images/tada.png') }}" style="width: 25px; height: 25px;"> RentAklat
     </a>
 
     <!-- Add a button to toggle the navigation bar on small screens -->
@@ -28,7 +28,6 @@
     <style>
       
         .navbar {
-            background-color: #333333;
             border-bottom: 1px solid #555555; 
         }
 
